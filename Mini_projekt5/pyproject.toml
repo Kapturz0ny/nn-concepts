@@ -23,6 +23,9 @@ numpy = "^2.2.6"
 seaborn = "^0.13.2"
 pandas = "^2.2.3"
 ipykernel = "^6.29.5"
+optuna = "^4.3.0"
+plotly = "^6.1.1"
+nbformat = ">=4.2.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
