@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "mini-projekt6"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[[tool.poetry.source]]
+name = "pytorch_cuda"
+url = "https://download.pytorch.org/whl/cu128"
+priority = "explicit"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+
+torch = { version = "^2.7.0", source = "pytorch_cuda" }
+torchvision = { version = "^0.22.0", source = "pytorch_cuda" }
+torchaudio = { version = "^2.7.0", source = "pytorch_cuda" }
+scikit-learn = "^1.6.1"
+ipykernel = "^6.29.5"
+numpy = "^2.2.6"
+matplotlib = "^3.10.3"
+seaborn = "^0.13.2"
+pandas = "^2.2.3"
+transformers = "^4.52.4"
+evaluate = "^0.4.3"
+accelerate = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
